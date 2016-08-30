@@ -16,6 +16,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var anzeige: UILabel!
     @IBOutlet weak var operatorFeld: UILabel!
     @IBOutlet weak var rechenartenControl: UISegmentedControl!
+    @IBOutlet weak var counterLabel: UILabel!
+
+    var correct = 0
+    var wrong = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,12 +74,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let calc = currentOperation()
         if e == calc(f1, f2) {
             self.anzeige.text = "✔️"
+            correct = correct + 1
         }
         else {
             self.anzeige.text = "❌"
+            wrong = wrong + 1
         }
+        let correctString = NSAttributedString(string: String(correct), attributes: [ NSForegroundColorAttributeName : UIColor.green ])
+        let wrongString = NSAttributedString(string: String(wrong), attributes: [ NSForegroundColorAttributeName : UIColor.red ])
         setUpFields()
         
+        let resultString = NSMutableAttributedString(attributedString: correctString)
+        resultString.append(NSAttributedString(string: " / "))
+        resultString.append(wrongString)
+        counterLabel.attributedText = resultString
         return true
     }
     

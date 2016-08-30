@@ -61,7 +61,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-WB-1LF">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-WB-1LF">
                                 <frame key="frameInset" minX="118" minY="172" width="92" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mRl-9p-q1v"/>
@@ -74,10 +74,16 @@
                                     <action selector="andereRechenart:" destination="BYZ-38-t0r" eventType="valueChanged" id="NFL-cg-2Gm"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="l76-Rb-qVD">
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uwm-ju-kL8" firstAttribute="leading" secondItem="jzf-uB-lgo" secondAttribute="trailing" constant="8" id="18N-y2-7rH"/>
+                            <constraint firstItem="l76-Rb-qVD" firstAttribute="baseline" secondItem="2Gx-HA-7cX" secondAttribute="baseline" id="2eP-uJ-bqd"/>
                             <constraint firstItem="pbb-WB-1LF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5QC-hO-Zex"/>
                             <constraint firstItem="uwm-ju-kL8" firstAttribute="baseline" secondItem="jzf-uB-lgo" secondAttribute="baseline" id="5qf-sO-cht"/>
                             <constraint firstItem="mhm-wR-ph0" firstAttribute="leading" secondItem="PNZ-UI-X1c" secondAttribute="trailing" constant="8" id="6Vj-qv-ibJ"/>
@@ -88,6 +94,7 @@
                             <constraint firstItem="PNZ-UI-X1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PFq-PB-ptk"/>
                             <constraint firstItem="mhm-wR-ph0" firstAttribute="baseline" secondItem="jzf-uB-lgo" secondAttribute="baseline" id="Qai-lY-nvr"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="baseline" secondItem="jzf-uB-lgo" secondAttribute="baseline" id="VSd-k3-FTD"/>
+                            <constraint firstItem="l76-Rb-qVD" firstAttribute="leading" secondItem="2Gx-HA-7cX" secondAttribute="trailing" constant="8" id="Z0W-WY-DEK"/>
                             <constraint firstItem="2Gx-HA-7cX" firstAttribute="top" secondItem="PNZ-UI-X1c" secondAttribute="bottom" constant="8" id="ca3-ix-HWE"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="leading" secondItem="mhm-wR-ph0" secondAttribute="trailing" constant="8" id="vor-Yl-6HO"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="height" secondItem="PNZ-UI-X1c" secondAttribute="height" id="wBk-dg-ekp"/>
@@ -96,6 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="anzeige" destination="2Gx-HA-7cX" id="bpc-P1-bt9"/>
+                        <outlet property="counterLabel" destination="l76-Rb-qVD" id="Phj-eW-mbM"/>
                         <outlet property="ergebnis" destination="dNJ-LV-tbE" id="8Ih-2B-ek9"/>
                         <outlet property="faktor1" destination="jzf-uB-lgo" id="tE7-Ff-vAG"/>
                         <outlet property="faktor2" destination="PNZ-UI-X1c" id="dzY-TO-UTk"/>
