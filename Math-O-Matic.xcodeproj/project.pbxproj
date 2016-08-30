@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		CBB653551D75C68700650B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653541D75C68700650B24 /* AppDelegate.swift */; };
 		CBB653571D75C68700650B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653561D75C68700650B24 /* ViewController.swift */; };
-		CBB6535A1D75C68700650B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB653581D75C68700650B24 /* Main.storyboard */; };
 		CBB6535C1D75C68700650B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6535B1D75C68700650B24 /* Assets.xcassets */; };
-		CBB6535F1D75C68700650B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB6535D1D75C68700650B24 /* LaunchScreen.storyboard */; };
 		CBB6536A1D75C68700650B24 /* Wusch_O_MatikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653691D75C68700650B24 /* Wusch_O_MatikTests.swift */; };
+		CBB653761D75CFCE00650B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB653741D75CFCE00650B24 /* Main.storyboard */; };
+		CBB653791D75CFDF00650B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB653771D75CFDF00650B24 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		CBB653511D75C68700650B24 /* Math-O-Matic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math-O-Matic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB653541D75C68700650B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB653561D75C68700650B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBB653591D75C68700650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB6535B1D75C68700650B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBB6535E1D75C68700650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB653601D75C68700650B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB653651D75C68700650B24 /* Math-O-MaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math-O-MaticTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB653691D75C68700650B24 /* Wusch_O_MatikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Wusch_O_MatikTests.swift; path = "Math-O-MaticTests/Wusch_O_MatikTests.swift"; sourceTree = "<group>"; };
 		CBB6536B1D75C68700650B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Math-O-MaticTests/Info.plist"; sourceTree = "<group>"; };
+		CBB653751D75CFCE00650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB653781D75CFDF00650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 			children = (
 				CBB653541D75C68700650B24 /* AppDelegate.swift */,
 				CBB653561D75C68700650B24 /* ViewController.swift */,
-				CBB653581D75C68700650B24 /* Main.storyboard */,
+				CBB653741D75CFCE00650B24 /* Main.storyboard */,
 				CBB6535B1D75C68700650B24 /* Assets.xcassets */,
-				CBB6535D1D75C68700650B24 /* LaunchScreen.storyboard */,
+				CBB653771D75CFDF00650B24 /* LaunchScreen.storyboard */,
 				CBB653601D75C68700650B24 /* Info.plist */,
 			);
 			path = "Math-O-Matic";
@@ -182,9 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB6535F1D75C68700650B24 /* LaunchScreen.storyboard in Resources */,
+				CBB653791D75CFDF00650B24 /* LaunchScreen.storyboard in Resources */,
+				CBB653761D75CFCE00650B24 /* Main.storyboard in Resources */,
 				CBB6535C1D75C68700650B24 /* Assets.xcassets in Resources */,
-				CBB6535A1D75C68700650B24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,18 +226,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBB653581D75C68700650B24 /* Main.storyboard */ = {
+		CBB653741D75CFCE00650B24 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBB653591D75C68700650B24 /* Base */,
+				CBB653751D75CFCE00650B24 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CBB6535D1D75C68700650B24 /* LaunchScreen.storyboard */ = {
+		CBB653771D75CFDF00650B24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBB6535E1D75C68700650B24 /* Base */,
+				CBB653781D75CFDF00650B24 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

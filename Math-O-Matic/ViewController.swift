@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var faktor2: UILabel!
     @IBOutlet weak var ergebnis: UITextField!
     @IBOutlet weak var anzeige: UILabel!
+    @IBOutlet weak var operatorFeld: UILabel!
+    @IBOutlet weak var rechenartenControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +25,50 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func setUpFields() {
         self.ergebnis.text = ""
         
-        let f1 = Int(arc4random_uniform(10) + 1)
-        let f2 = Int(arc4random_uniform(10) + 1)
+        var f1 : Int!
+        var f2 : Int!
+        switch rechenartenControl.selectedSegmentIndex {
+        case 1:
+            operatorFeld.text = ":"
+            f2 = Int(arc4random_uniform(10) + 1)
+            let result = Int(arc4random_uniform(10) + 1)
+            f1 = f2 * result
+        default:
+            operatorFeld.text = "⨯"
+            f1 = Int(arc4random_uniform(10) + 1)
+            f2 = Int(arc4random_uniform(10) + 1)
+
+        }
+        
         self.faktor2.text = String(f2)
         self.faktor1.text = String(f1)
     }
+    
+    @IBAction func andereRechenart(_ sender: UISegmentedControl) {
+        setUpFields()
+    }
+    
+    func currentOperation () -> ((_ x : Int, _ y : Int) -> Int) {
+        switch rechenartenControl.selectedSegmentIndex {
+        case 1:
+            return { (x:Int, y:Int) -> Int in
+                return x / y
+            }
+        default:
+            return { (x:Int, y:Int) -> Int in
+                return x * y
+            }
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let f1 = Int(self.faktor1.text ?? "") ?? 0
         let f2 = Int(self.faktor2.text ?? "") ?? 0
         
         let e = Int(self.ergebnis.text ?? "") ?? 0
         
-        if e == f1 * f2 {
+        let calc = currentOperation()
+        if e == calc(f1, f2) {
             self.anzeige.text = "✔️"
         }
         else {
