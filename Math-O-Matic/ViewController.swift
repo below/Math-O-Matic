@@ -34,8 +34,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         switch rechenartenControl.selectedSegmentIndex {
         case 1:
             operatorFeld.text = ":"
-            f2 = Int(arc4random_uniform(10) + 1)
-            let result = Int(arc4random_uniform(10) + 1)
+            f2 = Int(arc4random_uniform(9) + 2)
+            let result = Int(arc4random_uniform(9) + 2)
             f1 = f2 * result
         default:
             operatorFeld.text = "⨯"

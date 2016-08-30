@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import Wusch_O_Matik
+@testable import Math_O_Matic
 
-class Wusch_O_MatikTests: XCTestCase {
+class Math_O_MaticTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -10,7 +10,7 @@
 		CBB653551D75C68700650B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653541D75C68700650B24 /* AppDelegate.swift */; };
 		CBB653571D75C68700650B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653561D75C68700650B24 /* ViewController.swift */; };
 		CBB6535C1D75C68700650B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB6535B1D75C68700650B24 /* Assets.xcassets */; };
-		CBB6536A1D75C68700650B24 /* Wusch_O_MatikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653691D75C68700650B24 /* Wusch_O_MatikTests.swift */; };
+		CBB6536A1D75C68700650B24 /* Math_O_MaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB653691D75C68700650B24 /* Math_O_MaticTests.swift */; };
 		CBB653761D75CFCE00650B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB653741D75CFCE00650B24 /* Main.storyboard */; };
 		CBB653791D75CFDF00650B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB653771D75CFDF00650B24 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -32,8 +32,8 @@
 		CBB6535B1D75C68700650B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB653601D75C68700650B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB653651D75C68700650B24 /* Math-O-MaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math-O-MaticTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB653691D75C68700650B24 /* Wusch_O_MatikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Wusch_O_MatikTests.swift; path = "Math-O-MaticTests/Wusch_O_MatikTests.swift"; sourceTree = "<group>"; };
-		CBB6536B1D75C68700650B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Math-O-MaticTests/Info.plist"; sourceTree = "<group>"; };
+		CBB653691D75C68700650B24 /* Math_O_MaticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_O_MaticTests.swift; sourceTree = "<group>"; };
+		CBB6536B1D75C68700650B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB653751D75CFCE00650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB653781D75CFDF00650B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,11 +90,10 @@
 		CBB653681D75C68700650B24 /* Math-O-MaticTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBB653691D75C68700650B24 /* Wusch_O_MatikTests.swift */,
+				CBB653691D75C68700650B24 /* Math_O_MaticTests.swift */,
 				CBB6536B1D75C68700650B24 /* Info.plist */,
 			);
-			name = "Math-O-MaticTests";
-			path = "Wusch-O-MatikTests";
+			path = "Math-O-MaticTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB6536A1D75C68700650B24 /* Wusch_O_MatikTests.swift in Sources */,
+				CBB6536A1D75C68700650B24 /* Math_O_MaticTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +369,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
-				INFOPLIST_FILE = "Wusch-O-MatikTests/Info.plist";
+				INFOPLIST_FILE = "Math-O-MaticTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vonbelow.Wusch-O-MatikTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,7 +384,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
-				INFOPLIST_FILE = "Wusch-O-MatikTests/Info.plist";
+				INFOPLIST_FILE = "Math-O-MaticTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vonbelow.Wusch-O-MatikTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
