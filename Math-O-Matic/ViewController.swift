@@ -91,6 +91,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func clear(_ sender: AnyObject) {
+        wrong = 0
+        correct = 0
+        counterLabel.text = "0 / 0"
+    }
+    
     @IBAction func neuesErgebnis(_ sender: AnyObject) {
     }
     

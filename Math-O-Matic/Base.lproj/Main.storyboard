@@ -79,6 +79,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4m-u7-qoz">
+                                <state key="normal" title="⊗"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGN-Bc-lUH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -94,8 +100,10 @@
                             <constraint firstItem="PNZ-UI-X1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PFq-PB-ptk"/>
                             <constraint firstItem="mhm-wR-ph0" firstAttribute="baseline" secondItem="jzf-uB-lgo" secondAttribute="baseline" id="Qai-lY-nvr"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="baseline" secondItem="jzf-uB-lgo" secondAttribute="baseline" id="VSd-k3-FTD"/>
+                            <constraint firstItem="H4m-u7-qoz" firstAttribute="leading" secondItem="l76-Rb-qVD" secondAttribute="trailing" constant="8" id="Yvo-TG-mxm"/>
                             <constraint firstItem="l76-Rb-qVD" firstAttribute="leading" secondItem="2Gx-HA-7cX" secondAttribute="trailing" constant="8" id="Z0W-WY-DEK"/>
                             <constraint firstItem="2Gx-HA-7cX" firstAttribute="top" secondItem="PNZ-UI-X1c" secondAttribute="bottom" constant="8" id="ca3-ix-HWE"/>
+                            <constraint firstItem="H4m-u7-qoz" firstAttribute="centerY" secondItem="l76-Rb-qVD" secondAttribute="centerY" id="lpu-iT-vty"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="leading" secondItem="mhm-wR-ph0" secondAttribute="trailing" constant="8" id="vor-Yl-6HO"/>
                             <constraint firstItem="dNJ-LV-tbE" firstAttribute="height" secondItem="PNZ-UI-X1c" secondAttribute="height" id="wBk-dg-ekp"/>
                             <constraint firstItem="2Gx-HA-7cX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrc-2k-me1"/>
